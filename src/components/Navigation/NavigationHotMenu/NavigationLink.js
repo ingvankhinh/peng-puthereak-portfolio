@@ -1,27 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+const variants = {
+	initial: { opacity: 0.2 },
+	hover: { opacity: 1, x: 5 },
+	tap: { x: 0 }
+};
+
 const NavigationLink = ({ children, current, href }) => {
 	if (current) {
 		return (
-			<a href={href} className="mb-6 text-dark-blue p-3 dark:text-champagne">
+			<a href={href} className="mb-6 text-dark-blue p-3 dark:text-champagne lg:mb-0 lg:p-2">
 				{children}
 			</a>
 		);
 	}
 
-	const variants = {
-		default: { opacity: 0.2 },
-		hover: { opacity: 1, x: 5 },
-		tap: { x: 0 }
-	};
-
 	return (
 		<motion.a
 			href={href}
-			className="mb-6 text-dark-blue p-3 dark:text-champagne"
+			className="mb-6 text-dark-blue p-3 dark:text-champagne lg:mb-0 lg:p-2"
 			variants={variants}
-			initial="default"
+			initial="initial"
 			whileHover="hover"
 			whileTap="tap"
 		>

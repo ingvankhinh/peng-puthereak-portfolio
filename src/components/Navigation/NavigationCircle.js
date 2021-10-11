@@ -1,30 +1,25 @@
-import React, { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 
-const NavigationCircle = ({ active, top, left }) => {
-	const control = useAnimation();
+const variants = {
+	initial: { opacity: 0 },
+	open: () => {
+		const { offsetWidth, offsetHeight } = window && window.document.body;
+		const base = offsetWidth > offsetHeight ? offsetWidth : offsetHeight;
+		return { opacity: 1, scale: (base + 500) / (64 / 2.2), transition: { duration: 1.4, ease: 'anticipate' } };
+	},
 
-	useEffect(
-		() => {
-			if (active) {
-				const { clientWidth, clientHeight } = window.document.body;
-				const base = clientWidth > clientHeight ? clientWidth : clientHeight;
-				control.start({ opacity: 1, scale: base / (64 / 2.2) });
-			} else {
-				control.stop();
-				control.start({ opacity: 0, scale: 1 });
-			}
-		},
-		[ active, control ]
-	);
+	close: { opacity: 0, scale: 1, transition: { duration: 1.4, ease: 'anticipate' } }
+};
 
+const NavigationCircle = ({ active }) => {
 	return (
 		<motion.div
-			style={{ top, left, zIndex: '-1' }}
-			className="absolute bg-champagne rounded-full w-16 h-16 dark:bg-dark-blue-light"
-			animate={control}
-			initial={{ opacity: 0 }}
-			transition={{ duration: 1.4, ease: 'anticipate' }}
+			style={{ zIndex: '-1' }}
+			className="fixed bg-champagne rounded-full w-16 h-16 dark:bg-dark-blue-light"
+			variants={variants}
+			animate={active ? 'open' : 'close'}
+			initial="initial"
 		/>
 	);
 };
