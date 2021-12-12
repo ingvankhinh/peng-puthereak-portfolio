@@ -1,0 +1,48 @@
+{
+    "EN": [
+        {
+            "title": "Free man",
+            "description": "aasdjl;fkja;skldjfkl;asjdf;kljas;dklfjl;askdjfl;kajsdfikl",
+            "contentType": "img",
+            "content": "https://images.unsplash.com/photo-1639158809674-b7f048e3af0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "technologies": ["AE", "PS", "LR", "CR"]
+        },
+        {
+            "title": "Dr. David Buss: How Humans Select",
+            "description": "In this episode, my guest is Dr. David Buss, Professor of Psychology at the University of Texas, Austin, and one of the founding members of the field of evolutionary psychology.",
+            "contentType": "iframe",
+            "content": "https://www.youtube.com/embed/HXzTbCEqCJc",
+            "technologies": ["AE", "LR", "CR"]
+        },
+        {
+            "title": "Dr. David Buss: How Humans Select",
+            "description": "In this episode, my guest is Dr. David Buss, Professor of Psychology at the University of Texas, Austin, and one of the founding members of the field of evolutionary psychology.",
+            "contentType": "img",
+            "content": "https://images.unsplash.com/photo-1639272678244-3b5c2cff8a4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=693&q=80",
+            "technologies": ["AE", "PS", "LR", "CR"]
+        }
+    ],
+    "KH": [
+        {
+            "title": "មិនមែនចេះតែច្នៃឲ្យរួចៗទេណា៎! មកដឹងអត្ថន័យឈុតរាត្រីសមោសរ",
+            "description": "កម្មវិធី Miss Universe International 2021 បាន​ចាប់ផ្ដើមផ្សាយផ្ទាល់ជាផ្លូវការនៅ​ថ្ងៃទី ១១ ខែធ្នូ ឆ្នាំ២០២១ (យប់រំលងអាធ្រាតនៅកម្ពុជា) ដោយបានបង្ហាញ​នូវ​វត្តមានបវរកញ្ញាសម្រស់ស្រស់សោភាជា​ច្រើន​នាក់​មកពីជុំវិញពិភពលោក។",
+            "contentType": "img",
+            "content": "https://images.unsplash.com/photo-1639158809674-b7f048e3af0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "technologies": ["AE", "PS", "LR", "CR"]
+        },
+        {
+            "title": "កម្ពុជា ម៉ារ៉ាឌី បង្ហោះសារសូមអភ័យទោសចំពោះប្រជាជនខ្មែរ",
+            "description": "បវរកញ្ញាចក្រវាលតំណាងប្រទេសកម្ពុជា កញ្ញា ងិន ម៉ារ៉ាឌី ពិតជាធ្វើបានល្អបំផុត ទាំង ៤ វគ្គក្នុងរាត្រីប្រកួតបឋម នាទឹកដីប្រទេសអ៉ីស្រាអែល ។ ",
+            "contentType": "iframe",
+            "content": "https://www.youtube.com/embed/HXzTbCEqCJc",
+            "technologies": ["AE", "LR", "CR"]
+        },
+        {
+            "title": "Dr. David Buss: How Humans Select",
+            "description": "In this episode, my guest is Dr. David Buss, Professor of Psychology at the University of Texas, Austin, and one of the founding members of the field of evolutionary psychology.",
+            "contentType": "img",
+            "content": "https://images.unsplash.com/photo-1639272678244-3b5c2cff8a4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=693&q=80",
+            "technologies": ["AE", "PS", "LR", "CR"]
+        }
+    ]
+}

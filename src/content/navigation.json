@@ -1,0 +1,44 @@
+{
+    "EN": {
+        "links": {
+            "home": "Home",
+            "works": "Works",
+            "credentials": "Credentials",
+            "randoms": "Randoms"
+        },
+        "info": {
+            "label": "Info",
+            "phoneNumber": "0968435508",
+            "address": "Kirirom Institute Of Technology, Cambodia",
+            "email": "pengputhereak18@kit.edu.kh"
+        },
+        "contactLabels": {
+            "main": "Contact",
+            "nameInput": "Name",
+            "emailInput": "Email",
+            "messageInput": "Message",
+            "submitButton": "Submit"
+        }
+    },
+    "KH": {
+        "links": {
+            "home": "ទំព័រដើម",
+            "works": "ការងារ",
+            "credentials": "បទពិសោដធ៍",
+            "randoms": "ផ្សេងៗ"
+        },
+        "info": {
+            "label": "អំពីរខ្ញុំ",
+            "phoneNumber": "០៩៦៨៤៣៥៥០៨",
+            "address": "វិទ្យាស្ថានបច្ចេកវិទ្យាគិរីរម្យ",
+            "email": "pengputhereak18@kit.edu.kh"
+        },
+        "contactLabels": {
+            "main": "ទាក់ទងខ្ញុំ",
+            "nameInput": "ឈ្មោះ",
+            "emailInput": "អុីមែល",
+            "messageInput": "សារ",
+            "submitButton": "បញ្ជូនសារ"
+        }
+    }
+}
