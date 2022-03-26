@@ -2,7 +2,7 @@ import React from "react";
 import { motion, useCycle } from "framer-motion";
 
 import Navigation from "../components/Navigation";
-import QuickSetting from "./QuickSetting";
+import QuickSetting from "../components/QuickSetting";
 
 const Master = ({ children }) => {
     const [settingVisibility, toggleSettingVisibility] = useCycle(

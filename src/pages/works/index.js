@@ -3,8 +3,8 @@ import { connect } from "react-redux";
 import { Navigation, EffectFade } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import Master from "../layouts/Master";
-import WorksPageContent from "../content/worksPage.json";
+import Master from "../../layouts/Master";
+import WorksPageContent from "../../content/page/works.json";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -84,8 +84,6 @@ const Works = ({ language }) => {
                                             <i className="fas fa-arrow-left"></i>
                                         </span>
                                     </button>
-
-                                    {/* next button */}
                                     <button className="swiper-button-next">
                                         <span>
                                             <i className="fas fa-arrow-right"></i>
@@ -120,7 +118,6 @@ const Works = ({ language }) => {
                             prevEl: ".swiper-button-prev",
                         }}
                         speed={400}
-                        simulateTouch={false}
                         effect="fade"
                         fadeEffect={{ crossFade: true }}
                         className="h-full"
