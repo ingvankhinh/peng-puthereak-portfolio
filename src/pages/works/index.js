@@ -4,7 +4,7 @@ import { Navigation, EffectFade } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import Master from "../../layouts/Master";
-import WorksPageContent from "../../content/page/works.json";
+import WorksPageContent from "../../content/pages/works.json";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -56,11 +56,11 @@ const Works = ({ language }) => {
                                 {content.description}
                             </p>
                         </div>
-                        <div className="mb-4 p-10 bg-dark-blue dark:bg-champagne dark:bg-opacity-30">
+                        <div className="mb-4 bg-dark-blue dark:bg-champagne dark:bg-opacity-30">
                             <div className="aspect-w-16 aspect-h-9 md:aspect-w-4 md:aspect-h-5 md:flex md:items-center">
                                 {content.contentType.toUpperCase() === "IMG" ? (
                                     <img
-                                        className="w-auto h-full mx-auto object-contain	md:w-full md:max-h-auto"
+                                        className="w-full h-full mx-auto object-contain	md:w-full md:max-h-auto"
                                         alt={content.title}
                                         src={content.content}
                                     />

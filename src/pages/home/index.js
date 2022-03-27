@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import Master from "../../layouts/Master";
 import Button from "../../components/Button";
 
-import homePageContent from "../../content/page/home.json";
+import homePageContent from "../../content/pages/home.json";
 
 const HomePage = ({ language }) => {
     const content = homePageContent[language.toUpperCase()];
