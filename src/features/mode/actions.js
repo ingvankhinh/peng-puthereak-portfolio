@@ -4,7 +4,7 @@ import { store } from "../../state/store";
 const _mode = ["light", "dark"];
 
 const toggleDocumentClass = (mode) => {
-    if (window) {
+    if (typeof window !== "undefined") {
         if (mode === _mode[1]) {
             return window.document.documentElement.classList.add("dark");
         } else {

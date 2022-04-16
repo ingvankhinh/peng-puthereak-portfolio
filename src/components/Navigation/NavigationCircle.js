@@ -4,8 +4,12 @@ import { motion } from "framer-motion";
 const variants = {
     initial: { opacity: 0 },
     open: () => {
-        const { offsetWidth, offsetHeight } = window.document.body;
-        const base = offsetWidth > offsetHeight ? offsetWidth : offsetHeight;
+        let base = 0;
+        if (typeof window !== "undefined") {
+            const { outerWidth, outerHeight } = window;
+            base = outerWidth > outerHeight ? outerWidth : outerHeight;
+        }
+
         return {
             opacity: 1,
             scale: (base + 500) / (64 / 2.2),

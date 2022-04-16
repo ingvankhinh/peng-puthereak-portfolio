@@ -22,7 +22,7 @@ const Credentials = ({ language }) => {
                     experience={content[currentSelectedExperience]}
                     index={currentSelectedExperience}
                 />
-                {window.innerWidth <= 1023 ? (
+                {typeof window !== "undefined" && window.innerWidth <= 1023 ? (
                     <ExperienceTableMobile
                         onChange={setCurrentSelectedExperience}
                         content={content}

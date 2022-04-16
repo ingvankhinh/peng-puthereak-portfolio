@@ -1,0 +1,14 @@
+.navigation-hot-menu {
+    top: 0px;
+    width: calc(100vw - 59px);
+    left: 59px;
+}
+
+@media (max-width: 768px) {
+    .navigation-hot-menu {
+        top: 58px;
+        width: 100%;
+        left: 0;
+        height: calc(100vh - 58px);
+    }
+}

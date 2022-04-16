@@ -5,23 +5,26 @@ const _langauges = ["en", "kh"];
 
 //you can set the style in html main element so when the language get switch it will change font weight...
 
-const style = window.document.createElement("style");
-const styles = `
-    .kh-font-heading {
-        font-family: "Bayon", "Sora", "sans-serif";
-        letter-spacing: 0.025em;
-        line-height: 1.5;
-    }
-    .kh-font-description {
-        font-family:  "Kantumruy", "Sora", "sans-serif";
-        letter-spacing: 0.04em;
-        line-height: 1.8rem;
-    }
-`;
-style.innerHTML = styles;
+let style;
+if (typeof window !== undefined) {
+    style = window.document.createElement("style");
+    const styles = `
+     .kh-font-heading {
+         font-family: "Bayon", "Sora", "sans-serif";
+         letter-spacing: 0.025em;
+         line-height: 1.5;
+     }
+     .kh-font-description {
+         font-family:  "Kantumruy", "Sora", "sans-serif";
+         letter-spacing: 0.04em;
+         line-height: 1.8rem;
+     }
+ `;
+    style.innerHTML = styles;
+}
 
 const addStylesToDocument = (language) => {
-    if (window) {
+    if (typeof window !== "undefined") {
         if (language === "kh") {
             window.document.head.append(style);
         } else {

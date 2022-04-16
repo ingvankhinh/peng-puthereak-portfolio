@@ -57,7 +57,9 @@ const ExperienceTableDesktop = ({
 
         calculateOneMonthWidth();
 
-        window.addEventListener("resize", calculateOneMonthWidth);
+        if (typeof window !== "undefined") {
+            window.addEventListener("resize", calculateOneMonthWidth);
+        }
     }, [timelineBeginYear, timelineEndYear, timelineRef]);
 
     const getMousePosition = (page, offset) => {

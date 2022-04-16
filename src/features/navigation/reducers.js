@@ -2,7 +2,7 @@ import { _type as type } from "./types";
 
 const _defaultState = {
     state: "inactive",
-    currentPath: window.location.pathname,
+    currentPath: typeof window !== "undefined" && window.location.pathname,
 };
 
 export const navigationReducer = (state, action) => {
