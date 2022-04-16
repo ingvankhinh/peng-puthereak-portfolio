@@ -6,7 +6,7 @@ const _langauges = ["en", "kh"];
 //you can set the style in html main element so when the language get switch it will change font weight...
 
 let style;
-if (typeof window !== undefined) {
+if (typeof window !== "undefined") {
     style = window.document.createElement("style");
     const styles = `
      .kh-font-heading {
