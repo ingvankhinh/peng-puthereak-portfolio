@@ -26,19 +26,28 @@ const animate = {
 };
 
 const ExperienceDetail = ({ index, experience }) => {
-    const { title, content, startDate, endDate } = experience;
+    let title, content, startDate, endDate;
 
-    const technologies = content.technologies.map((technology) => {
-        return (
-            <span
-                key={technology}
-                className="mr-1 font-bold text-dark-blue"
-                dangerouslySetInnerHTML={{
-                    __html: technologyIcons[technology],
-                }}
-            ></span>
-        );
-    });
+    if (experience) {
+        title = experience.title;
+        content = experience.content;
+        startDate = experience.startDate.label;
+        endDate = experience.endDate.label;
+    }
+
+    const technologies =
+        content &&
+        content.technologies.map((technology) => {
+            return (
+                <span
+                    key={technology}
+                    className="mr-1 font-bold text-dark-blue"
+                    dangerouslySetInnerHTML={{
+                        __html: technologyIcons[technology],
+                    }}
+                ></span>
+            );
+        });
 
     return (
         <div
@@ -72,14 +81,14 @@ const ExperienceDetail = ({ index, experience }) => {
                     transition={{ delay: 0.15 }}
                     className="text-dark-blue font-bold dark:text-champagne dark:text-opacity-60 mb-2 kh-font-description lg:mb-0"
                 >
-                    {startDate.label} - {endDate.label}
+                    {startDate} - {endDate}
                 </motion.p>
                 <motion.p
                     {...animate}
                     transition={{ delay: 0.2 }}
                     className="text-dark-blue text-opacity-60 dark:text-champagne dark:text-opacity-60 mb-4 kh-font-description lg:mb-1"
                 >
-                    {content.description}
+                    {content && content.description}
                 </motion.p>
                 <motion.div
                     {...animate}

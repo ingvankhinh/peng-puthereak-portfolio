@@ -1,20 +1,12 @@
 import React from "react";
-import { connect } from "react-redux";
 
 import Master from "../../layouts/Master";
-
-const Card = (props) => {
-    return (
-        <div className="overflow-hidden	card bg-dark-blue text-champagne dark:bg-champagne dark:text-dark-blue dark:bg-opacity-30 mb-4 h-auto">
-            {props.children}
-        </div>
-    );
-};
+import Card from "./Card";
 
 // each card will have 30% width;
 // there will be 5% gap;
 
-const Randoms = ({ language }) => {
+const Randoms = () => {
     return (
         <Master>
             <div className="w-full h-full px-28 py-20 2xl:px-24 xl:px-20 lg:px-16 md:px-10 md:flex-col sm:px-7">
@@ -86,8 +78,4 @@ const Randoms = ({ language }) => {
     );
 };
 
-const mapStateToProps = (states) => {
-    return { language: states.language };
-};
-
-export default connect(mapStateToProps, null)(Randoms);
+export default Randoms;

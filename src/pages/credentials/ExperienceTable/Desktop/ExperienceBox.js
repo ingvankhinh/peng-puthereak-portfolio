@@ -3,8 +3,13 @@ import { motion } from "framer-motion";
 
 const ExperienceBox = (props) => {
     const { experience, onClick: setCurrentSelectedExperience, index } = props;
-    const startDate = experience.startDate.label;
-    const endDate = experience.endDate.label;
+    //gatsby won't allow direct prop access on this file.
+    let startDate, endDate, title;
+    if (experience) {
+        title = experience.title;
+        startDate = experience.startDate.label;
+        endDate = experience.endDate.label;
+    }
 
     return (
         <motion.div
@@ -23,7 +28,7 @@ const ExperienceBox = (props) => {
                 style={{ maxWidth: "11ch" }}
                 className="font-semibold block whitespace-nowrap overflow-ellipsis overflow-hidden w-full"
             >
-                {experience.title}
+                {title}
             </span>
             <span className="text-xs font-light whitespace-nowrap overflow-ellipsis overflow-hidden">
                 {startDate} - {endDate}
