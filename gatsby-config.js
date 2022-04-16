@@ -8,20 +8,18 @@ module.exports = {
         "gatsby-plugin-image",
         "gatsby-plugin-sharp",
         "gatsby-plugin-react-helmet",
-
+        "gatsby-transformer-sharp",
         {
             resolve: "gatsby-plugin-manifest",
             options: {
                 icon: "src/content/images/icon.png",
             },
         },
-        "gatsby-plugin-sharp",
-        "gatsby-transformer-sharp",
         {
             resolve: "gatsby-source-filesystem",
             options: {
                 name: "images",
-                path: "./src/content/images/",
+                path: `${__dirname}/src/content/images/`,
             },
             __key: "images",
         },

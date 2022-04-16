@@ -1,10 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Kantumruy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Josefin+Sans:wght@400;500;700&family=Kantumruy&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+::-moz-selection{
+	background: rgba(30, 38, 64, .15);
+}
+
+::selection{
+	background: rgba(30, 38, 64, .15);
+}
+
+.dark ::-moz-selection {
+	background: rgb(243, 234, 192, .15);
+} 
+
+.dark ::selection {
+	background: rgb(243, 234, 192, .15);
+} 
 
 .border-1 {
 	border-width: 1px;
@@ -35,6 +49,7 @@
 	column-gap: 1rem;
 	column-width: 33%;
 }
+
 .card {
 	transition: all .2s;
 }
@@ -43,6 +58,7 @@
 	border-radius: .3rem;
 	transform: scale(1.03);
 }
+
 
 @media(max-width: 1279px){
 	.card-holder {

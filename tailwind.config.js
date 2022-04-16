@@ -24,7 +24,7 @@ module.exports = {
             // => @media (max-width: 639px) { ... }
         },
         fontFamily: {
-            sans: ["Sora", "sans-serif"],
+            sans: ["Josefin Sans", "sans-serif"],
             bayon: ["Bayon", "sans-serif"],
             kantumruy: ["Kantumruy", "sans-serif"],
         },
