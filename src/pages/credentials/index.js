@@ -24,11 +24,13 @@ const Credentials = ({ language }) => {
                 />
                 {typeof window !== "undefined" && window.innerWidth <= 1023 ? (
                     <ExperienceTableMobile
+                        index={currentSelectedExperience}
                         onChange={setCurrentSelectedExperience}
                         content={content}
                     />
                 ) : (
                     <ExperienceTableDesktop
+                        index={currentSelectedExperience}
                         onChange={setCurrentSelectedExperience}
                         content={content}
                     />
